@@ -120,7 +120,7 @@ class RefreshTokenAPIView(APIView):
         request=TokenRefreshSerializer,
         responses={
             200: OpenApiResponse(
-                response=RegisterOpenAPISerialiser,
+                response=RefreshTokenSerializer,
                 description='User logined successfully'
             ),
             401: OpenApiResponse(

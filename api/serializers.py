@@ -24,6 +24,10 @@ class RegisterOpenAPISerialiser(serializers.Serializer):
     refresh = serializers.CharField(read_only=True)
 
 
+class RefreshTokenSerializer(serializers.Serializer):
+    access = serializers.CharField()
+
+
 class LoginSerializer(serializers.Serializer):
     username = serializers.CharField(max_length=50)
     password = serializers.CharField(max_length=50)
