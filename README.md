@@ -32,6 +32,9 @@ status 400;
 
 
 api/login
+
+Позволяет получить токен
+
 request:
 {
   "username": "user",
@@ -57,6 +60,9 @@ status 404
 
 
 api/refresh
+
+Позволяет обновить токен
+
 request:
 {
     "refresh": "refreshToken"
@@ -80,6 +86,9 @@ status 401
 
 
 api/get_book
+
+Получение данных пачками
+
 request:
 {
     "titles": [
@@ -118,6 +127,9 @@ status 400
 
 
 api/new_book
+
+Запись данных пачками
+
 request:
 {
   "title": "book1",
